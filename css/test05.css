@@ -1,0 +1,169 @@
+* {
+    /* border: 1px solid #ddd; */
+}
+
+.container {
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.header {
+    background: #000;
+}
+
+.header .container {
+    justify-content: space-between;
+    line-height: 100px;
+}
+
+.header .container h1 {
+    font-size: 0;
+    flex: 1;
+}
+
+.header .container .gnb ul {
+    display: flex;
+    gap: 30px;
+    color: #ddd;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.header .container .icon {
+    display: flex;
+    color: #ddd;
+    font-size: 25px;
+    line-height: 100px;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.header .container .icon i {
+    padding: 0 10px;
+}
+
+.main .mainVisual {
+    position: relative;
+}
+
+.main .mainVisual .item01 {
+    background: url(../img/bg01.jpg) no-repeat center bottom / cover;
+    height: calc(100vh - 100px);
+}
+
+.main .mainVisual .item02 {
+    background: url(../img/bg02.jpg) no-repeat center center / cover;
+    height: calc(100vh - 100px);
+}
+
+.main .mainVisual .item03 {
+    background: url(../img/bg03.jpg) no-repeat center center / cover;
+    height: calc(100vh - 100px);
+}
+
+.scroll {
+    position: absolute;
+    inset: 85% auto auto 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 70px;
+    border-radius: 20px;
+    border: 2px solid #fff;
+}
+
+.scroll::after {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    content: "";
+    width: 3px;
+    height: 12px;
+    border-radius: 1.5px;
+    background: #fff;
+    transform: translateX(-50%);
+    animation: wheel 1s infinite;
+}
+
+@keyframes wheel {
+    to {
+        top: 20px;
+    }
+}
+
+.mainCopy {
+    padding: 100px 0;
+    background: #000;
+}
+
+.mainCopy .left {
+    flex: 1;
+}
+
+.mainCopy .left {
+    flex: 1;
+}
+
+.mainCopy h2 {
+    font-size: 50px;
+    font-weight: 900;
+    color: #ddd;
+}
+
+
+.mainCamera {
+    padding: 100px 0;
+}
+
+.mainCamera .container {
+    display: block;
+}
+
+.mainCamera h2 {
+    font-size: 33px;
+    font-weight: 700;
+    margin: 0 0 30px 2px;
+}
+
+.mainCamera .eosR {
+    display: flex;
+    gap: 30px;
+}
+
+.mainCamera .eosR figure {
+    flex: 1;
+    background: #f1f1f1;
+    border-radius: 10px;
+    margin: 0 0 20px 0;
+}
+
+.mainCamera .eosR .txt {
+    background: #fff;
+}
+
+.mainCamera .eosR h3 {
+    font-size: 21px;
+    font-weight: 700;
+    padding: 0 2px;
+    margin: 0 0 10px 0;
+}
+
+.mainCamera .eosR p {
+    font-size: 15px;
+    font-weight: 400;
+    padding: 0 2px;
+}
+
+.mainCamera .eosR .pay ul {
+    display: flex;
+    justify-content: space-between;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.mainCamera .eosR .pay a {
+    font-size: 15px;
+    font-weight: 400;
+    border: 1px solid #333;
+    padding: 2px 20px 4px;
+}
