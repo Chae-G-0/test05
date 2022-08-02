@@ -232,9 +232,58 @@
     padding: 100px 0;
 }
 
+.mainLens .container {
+    display: block;
+}
+
 .mainLens h2 {
     font-family: "Merriweather", serif;
     font-size: 33px;
     font-weight: 700;
     margin: 0 0 20px 2px;
 }
+
+.mainLens .tabMenu {
+    display: flex;
+}
+
+.mainLens .tabMenu>li {
+    border: 1px solid #333;
+    flex: 1;
+}
+
+.mainLens .tabMenu>li>a {
+    display: block;
+    line-height: 40px;
+    padding: 0 15px;
+}
+
+.mainLens .tabMenu>li.on a {
+    background: #f00;
+}
+
+.tabContent {
+    position: relative;
+}
+
+.tabContent>li {
+    position: absolute;
+    inset: 0 auto auto 0;
+    visibility: hidden;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.tabContent>li.on {
+    visibility: visible;
+    display: block;
+}
+
+.lensSlide {
+    display: flex;
+    gap: 30px;
+    width: 1200px;
+    padding: 0 100px;
+}
+
+
