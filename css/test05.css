@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300&family=Nanum+Myeongjo&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
 
 * {
-    /* border: 1px solid #ddd; */
+    border: 1px solid #ddd;
 }
 
 .container {
@@ -27,7 +27,7 @@
 
 .header .container .gnb ul {
     display: flex;
-    gap: 30px;
+    gap: 50px;
     color: #ddd;
     font-family: "Merriweather", serif;
     font-size: 17px;
@@ -76,7 +76,7 @@
     width: 40px;
     height: 70px;
     border-radius: 20px;
-    border: 2px solid #919191;
+    border: 2px solid #f1f1f1;
 }
 
 .scroll::after {
@@ -87,7 +87,7 @@
     width: 3px;
     height: 12px;
     border-radius: 1.5px;
-    background: #919191;
+    background: #f1f1f1;
     transform: translateX(-50%);
     animation: wheel 1s infinite;
 }
@@ -125,7 +125,7 @@
     margin: 0 0 0 2px;
 }
 
-.mainCopy .left .txt p:nth-child(2) > strong {
+.mainCopy .left .txt p:nth-child(2) > span {
     font-size: 50px;
     font-weight: 900;
 }
@@ -154,12 +154,13 @@
 }
 
 .mainCopy a {
+    display: inline-block;
     font-size: 14px;
     font-weight: 400;
     border: 1px solid #ddd;
     color: #ddd;
-    padding: 2px 20px 4px;
-    margin: 0 0 0 430px;
+    padding: 3px 20px 5px;
+    margin: auto 0 0 430px;
 }
 
 .mainCopy .right {
@@ -172,7 +173,7 @@
 .mainCamera {
     padding: 100px 0;
     background: #000;
-    color: #fff;
+    color: #ddd;
 }
 
 .mainCamera .container {
@@ -200,27 +201,21 @@
 
 .mainCamera .eosR h3 {
     font-size: 21px;
-    font-weight: 700;
+    font-weight: 500;
     padding: 0 2px;
     margin: 0 0 10px 0;
-}
-
-.mainCamera .eosR p {
-    font-size: 15px;
-    font-weight: 400;
-    padding: 0 2px;
 }
 
 .mainCamera .eosR .pay ul {
     display: flex;
     justify-content: space-between;
     font-size: 17px;
-    font-weight: 500;
+    font-weight: 300;
 }
 
 .mainCamera .eosR .pay a {
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 300;
     border: 1px solid #fff;
     padding: 2px 20px 4px;
 }
@@ -234,6 +229,7 @@
 
 .mainLens .container {
     display: block;
+    height: 550px;
 }
 
 .mainLens h2 {
@@ -245,28 +241,35 @@
 
 .mainLens .tabMenu {
     display: flex;
+    gap: 30px;
 }
 
-.mainLens .tabMenu>li {
-    border: 1px solid #333;
+.mainLens .tabMenu > li {
+    font-size: 19px;
+    font-weight: 400;
+    text-align: center;
     flex: 1;
 }
 
-.mainLens .tabMenu>li>a {
+.mainLens .tabMenu > li > a {
     display: block;
     line-height: 40px;
     padding: 0 15px;
+    border: 1px solid #333;
+    border-radius: 20px;
 }
 
-.mainLens .tabMenu>li.on a {
-    background: #f00;
+.mainLens .tabMenu > li.on a {
+    color: #fff;
+    border: none;
+    background: rgb(221, 4, 4);
 }
 
 .tabContent {
     position: relative;
 }
 
-.tabContent>li {
+.tabContent > li {
     position: absolute;
     inset: 0 auto auto 0;
     visibility: hidden;
@@ -274,16 +277,55 @@
     width: 100%;
 }
 
-.tabContent>li.on {
+.tabContent > li.on {
     visibility: visible;
     display: block;
 }
 
-.lensSlide {
-    display: flex;
-    gap: 30px;
-    width: 1200px;
-    padding: 0 100px;
+.lensSlide img {
+    padding: 0 15px;
+    background: #f1f1f1;
+    border: 1px solid #f00;
+    margin: 0 0 15px 0;
 }
 
+.lensSlide .txt {
+    font-size: 17px;
+    font-weight: 400;
+    display: flex;
+}
 
+.tabLens .tabContent :last-child {
+    display: flex;
+}
+
+.mainPic {
+    display: flex;
+    padding: 100px 0;
+    background: #000;
+    color: #fff;
+    overflow-x: hidden;
+    gap: 100px;
+}
+
+.mainPic h2 {
+    font-size: 30px;
+}
+.mainPic img {
+    max-width: none;
+}
+
+.footer {
+    height: 100vh;
+    background: #000;
+}
+
+.footer .top {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.footer .top h2 {
+    line-height: 100px;
+    font-size: 0;
+}
