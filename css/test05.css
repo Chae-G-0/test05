@@ -4,6 +4,10 @@
     --mc: #cc0000;
 }
 
+body {
+    background: #000;
+}
+
 * {
     /* border: 1px solid #f00; */
 }
@@ -247,6 +251,7 @@
 .mainLens .container {
     display: block;
     height: 550px;
+    width: 1230px;
 }
 
 .mainLens h2 {
@@ -254,11 +259,14 @@
     font-size: 33px;
     font-weight: 700;
     margin: 0 0 20px 2px;
+    padding: 0 0 0 15px;
 }
 
 .mainLens .tabMenu {
     display: flex;
     gap: 10px;
+    padding: 0 0 0 15px;
+
     /* justify-content: center; */
 }
 
@@ -301,8 +309,12 @@
     display: block;
 }
 
+.lensSlide figure {
+    padding: 0 15px;
+}
+
 .lensSlide img {
-    /* background: #212529; */
+    background: #212529;
     /* border-right: 1px solid #f00; */
     margin: 0 0 15px 0;
 }
@@ -328,7 +340,6 @@
     background: #000;
     color: #fff;
     overflow-x: hidden;
-    gap: 100px;
 }
 
 .mainPic .innerTxt {
@@ -336,7 +347,7 @@
 }
 
 .mainPic h3 {
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 500;
     margin: 0 0 10px 0;
 }
@@ -357,16 +368,24 @@
 
 .mainPic .box {
     display: flex;
-    gap: 100px;
+    gap: 80px;
 }
 
 .mainPic .box .pic03 {
     margin: auto 0 0 0;
 }
 
+.pic03 .innerTxt {
+    margin: 0 0 20px 0;
+}
+
 .pic02 img,
 .pic04 img {
     margin: 0 0 10px 0;
+}
+
+.pic05 .innerTxt {
+    margin-top: auto;
 }
 
 .pic figure {

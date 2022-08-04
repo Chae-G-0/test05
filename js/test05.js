@@ -38,7 +38,7 @@ $(function () {
         } else if (e.deltaY > 0 && scrollContainer.scrollLeft > 1700) {
         } else {
             e.preventDefault();
-            scrollContainer.scrollLeft += e.deltaY;
+            scrollContainer.scrollLeft += e.deltaY * 2;
         }
     });
 });
