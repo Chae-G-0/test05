@@ -214,7 +214,6 @@ body {
 .mainCamera .eosR figure {
     flex: 1;
     background: #ddd;
-    border-radius: 10px;
     margin: 0 0 20px 0;
 }
 
@@ -235,7 +234,7 @@ body {
 .mainCamera .eosR .pay a {
     font-size: 14px;
     font-weight: 300;
-    border: 1px solid #fff;
+    border: 1px solid #ced4da;
     padding: 2px 20px 4px;
 }
 
@@ -251,44 +250,44 @@ body {
 .mainLens .container {
     display: block;
     height: 550px;
-    width: 1230px;
 }
 
 .mainLens h2 {
     font-family: "Merriweather", serif;
     font-size: 33px;
     font-weight: 700;
-    margin: 0 0 20px 2px;
-    padding: 0 0 0 15px;
+}
+
+.mainLens .top {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 10px 0;
 }
 
 .mainLens .tabMenu {
     display: flex;
     gap: 10px;
-    padding: 0 0 0 15px;
-
-    /* justify-content: center; */
 }
 
 .mainLens .tabMenu > li {
-    font-size: 19px;
+    font-size: 17px;
     font-weight: 400;
 }
 
 .mainLens .tabMenu > li > a {
     display: block;
     line-height: 40px;
-    padding: 0 50px 2px 50px;
+    padding: 0 40px 2px 40px;
     /* border: 1px solid #333; */
-    border-top: 1px solid #ddd;
-    border-left: 1px solid #ddd;
+    /* border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd; */
     border-radius: 20px;
 }
 
 .mainLens .tabMenu > li.on a {
     border: none;
-    border-top: 1px solid #cc0000;
-    border-left: 1px solid #cc0000;
+    /* border-top: 1px solid #cc0000;
+    border-left: 1px solid #cc0000; */
     background: #cc0000;
 }
 
@@ -310,18 +309,18 @@ body {
 }
 
 .lensSlide figure {
-    padding: 0 15px;
 }
 
 .lensSlide img {
-    background: #212529;
-    /* border-right: 1px solid #f00; */
+    /* background: #212529; */
+    border: 1px solid #495057;
+    border-right: 0px;
     margin: 0 0 15px 0;
 }
 
 .lensSlide .txt {
-    font-size: 17px;
-    font-weight: 300;
+    font-size: 21px;
+    font-weight: 500;
     text-align: center;
     line-height: 1.4;
 }
@@ -357,7 +356,7 @@ body {
 }
 
 .mainPic p {
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 300;
     line-height: 1.4;
 }
