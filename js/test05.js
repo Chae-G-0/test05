@@ -35,7 +35,7 @@ $(function () {
         console.log(scrollContainer.scrollLeft, e.deltaY);
         if (e.deltaY < 0 && scrollContainer.scrollLeft == 0) {
             console.log(e.deltaY == -100);
-        } else if (e.deltaY > 0 && scrollContainer.scrollLeft > 5000) {
+        } else if (e.deltaY > 0 && scrollContainer.scrollLeft > 4300) {
         } else {
             e.preventDefault();
             scrollContainer.scrollLeft += e.deltaY * 2;

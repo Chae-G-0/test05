@@ -14,6 +14,7 @@ body {
 
 * > h2 {
     font-size: 33px;
+    font-weight: 500;
     font-family: "Merriweather", serif;
 }
 
@@ -127,7 +128,7 @@ body {
 .mainCopy .left {
     border-left: 1px solid var(--mc);
     flex: 1;
-    padding: 10px 0 10px 30px;
+    padding: 10px 0 0 30px;
 }
 
 .mainCopy .left .txt {
@@ -140,8 +141,9 @@ body {
 }
 
 .mainCopy .left .txt strong {
+    font-family: "Merriweather", serif;
     font-size: 60px;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .mainCopy .left .txt p:nth-child(2) {
@@ -152,6 +154,7 @@ body {
 .mainCopy .left .txt p:nth-child(3) {
     font-size: 25px;
     font-weight: 500;
+    line-height: 0.7;
 }
 
 .mainCopy p {
@@ -174,9 +177,9 @@ body {
 
 .mainCopy a {
     display: inline-block;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 400;
-    border: 1px solid #ddd;
+    border: 1px solid #ced4da;
     color: #ddd;
     padding: 3px 20px 5px;
     margin: auto 0 0 430px;
@@ -200,9 +203,6 @@ body {
 }
 
 .mainCamera h2 {
-    font-family: "Merriweather", serif;
-    font-size: 33px;
-    font-weight: 700;
     margin: 0 0 20px 2px;
 }
 
@@ -213,7 +213,7 @@ body {
 
 .mainCamera .eosR figure {
     flex: 1;
-    background: #ddd;
+    background: #495057;
     margin: 0 0 20px 0;
 }
 
@@ -227,7 +227,7 @@ body {
 .mainCamera .eosR .pay ul {
     display: flex;
     justify-content: space-between;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 300;
 }
 
@@ -243,19 +243,14 @@ body {
 
 .mainLens {
     padding: 100px 0;
-    color: #fff;
+    color: #ddd;
     background: #000;
 }
 
 .mainLens .container {
     display: block;
+    width: 1199px;
     height: 550px;
-}
-
-.mainLens h2 {
-    font-family: "Merriweather", serif;
-    font-size: 33px;
-    font-weight: 700;
 }
 
 .mainLens .top {
@@ -266,7 +261,7 @@ body {
 
 .mainLens .tabMenu {
     display: flex;
-    gap: 10px;
+    /* gap: 10px; */
 }
 
 .mainLens .tabMenu > li {
@@ -299,7 +294,6 @@ body {
     position: absolute;
     inset: 0 auto auto 0;
     visibility: hidden;
-    padding: 10px 0;
     width: 100%;
 }
 
@@ -339,11 +333,19 @@ body {
 }
 
 .mainPic {
-    display: flex;
-    padding: 100px 0;
+    padding: 50px 0;
     background: #000;
     color: #fff;
     overflow-x: hidden;
+}
+
+.mainPic .container {
+    display: block;
+}
+
+.mainPic h2 {
+    margin: 0 0 30px 0;
+    font-weight: 300;
 }
 
 .mainPic .innerTxt {
@@ -380,15 +382,16 @@ body {
 }
 
 .pic03 .innerTxt,
-.pic07 .innerTxt {
+.pic07 .innerTxt,
+.pic08 .innerTxt {
     margin: 0 0 20px 0;
 }
 
 .pic02 img,
-.pic04 img, 
-.pic05 img, 
-.pic06 img, 
-.pic07 img, 
+.pic04 img,
+.pic05 img,
+.pic06 img,
+.pic07 img,
 .pic08 img {
     margin: 0 0 10px 0;
 }
