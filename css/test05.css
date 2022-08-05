@@ -137,12 +137,12 @@ body {
 
 .mainCopy .left .txt p:nth-child(1) {
     margin: 0 0 0 2px;
-    line-height: 0.7;
+    line-height: 0.9;
 }
 
 .mainCopy .left .txt strong {
     font-family: "Merriweather", serif;
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 500;
 }
 
@@ -172,7 +172,7 @@ body {
     font-size: 15px;
     font-weight: 300;
     line-height: 1.45;
-    margin: 0 0 30px 0;
+    margin: 0 0 55px 0;
 }
 
 .mainCopy a {
@@ -213,7 +213,7 @@ body {
 
 .mainCamera .eosR figure {
     flex: 1;
-    background: #495057;
+    background: #212529;
     margin: 0 0 20px 0;
 }
 
@@ -227,7 +227,7 @@ body {
 .mainCamera .eosR .pay ul {
     display: flex;
     justify-content: space-between;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 300;
 }
 
@@ -302,9 +302,6 @@ body {
     display: block;
 }
 
-.lensSlide figure {
-}
-
 .lensSlide img {
     /* background: #212529; */
     border: 1px solid #495057;
@@ -355,11 +352,12 @@ body {
 .mainPic h3 {
     font-size: 40px;
     font-weight: 500;
-    margin: 0 0 10px 0;
+    margin: 0 0 5px 0;
 }
 .mainPic .big {
     font-size: 21px;
     font-weight: 500;
+    margin: 0 0 5px 0;
 }
 
 .mainPic p {
@@ -392,7 +390,8 @@ body {
 .pic05 img,
 .pic06 img,
 .pic07 img,
-.pic08 img {
+.pic08 img,
+.pic09 img {
     margin: 0 0 10px 0;
 }
 
