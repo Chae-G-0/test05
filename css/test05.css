@@ -8,10 +8,6 @@ body {
     background: #000;
 }
 
-* {
-    /* border: 1px solid #f00; */
-}
-
 * > h2 {
     font-size: 33px;
     font-weight: 500;
@@ -87,8 +83,8 @@ body {
     position: absolute;
     inset: 85% auto auto 50%;
     transform: translate(-50%, -50%);
-    width: 40px;
-    height: 70px;
+    width: 35px;
+    height: 60px;
     border-radius: 20px;
     border: 2px solid #f1f1f1;
 }
@@ -99,7 +95,7 @@ body {
     left: 50%;
     content: "";
     width: 3px;
-    height: 12px;
+    height: 10px;
     border-radius: 1.5px;
     background: #f1f1f1;
     transform: translateX(-50%);
@@ -108,7 +104,7 @@ body {
 
 @keyframes wheel {
     to {
-        top: 20px;
+        top: 15px;
     }
 }
 
@@ -132,7 +128,7 @@ body {
 }
 
 .mainCopy .left .txt {
-    margin: 0 0 30px 0;
+    margin: 0 0 40px 0;
 }
 
 .mainCopy .left .txt p:nth-child(1) {
@@ -172,7 +168,7 @@ body {
     font-size: 15px;
     font-weight: 300;
     line-height: 1.45;
-    margin: 0 0 55px 0;
+    margin: 0 0 50px 0;
 }
 
 .mainCopy a {
@@ -182,7 +178,6 @@ body {
     border: 1px solid #ced4da;
     color: #ddd;
     padding: 3px 20px 5px;
-    margin: auto 0 0 430px;
 }
 
 .mainCopy .right {
@@ -273,16 +268,11 @@ body {
     display: block;
     line-height: 40px;
     padding: 0 40px 2px 40px;
-    /* border: 1px solid #333; */
-    /* border-top: 1px solid #ddd;
-    border-left: 1px solid #ddd; */
     border-radius: 20px;
 }
 
 .mainLens .tabMenu > li.on a {
     border: none;
-    /* border-top: 1px solid #cc0000;
-    border-left: 1px solid #cc0000; */
     background: #cc0000;
 }
 
@@ -303,7 +293,6 @@ body {
 }
 
 .lensSlide img {
-    /* background: #212529; */
     border: 1px solid #495057;
     border-right: 0px;
     margin: 0 0 15px 0;
@@ -330,7 +319,7 @@ body {
 }
 
 .mainPic {
-    padding: 50px 0;
+    padding: 100px 0;
     background: #000;
     color: #fff;
     overflow-x: hidden;
