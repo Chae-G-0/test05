@@ -18,8 +18,6 @@ $(function () {
         slideToShow: 3,
     });
 
-    console.log("댄다!");
-
     $(".tabMenu>li>a").on("click", function (e) {
         e.preventDefault();
         var idx = $(this).parent().index();
